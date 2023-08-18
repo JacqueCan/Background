@@ -7,6 +7,7 @@ package background;
 
 import java.awt.Color;
 import java.util.Random;
+import javax.swing.JPanel;
 
 
 /**
@@ -22,6 +23,7 @@ public class Backgrounds extends javax.swing.JFrame {
      */
     public Backgrounds() {
         initComponents();
+       // panel_colores.setBackground(Color.red);
     }
     
    
@@ -45,7 +47,7 @@ public class Backgrounds extends javax.swing.JFrame {
         panel_colores.setLayout(panel_coloresLayout);
         panel_coloresLayout.setHorizontalGroup(
             panel_coloresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 178, Short.MAX_VALUE)
+            .addGap(0, 290, Short.MAX_VALUE)
         );
         panel_coloresLayout.setVerticalGroup(
             panel_coloresLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -59,38 +61,36 @@ public class Backgrounds extends javax.swing.JFrame {
             }
         });
 
-        txt_nombre.setText("sdgsdg");
+        txt_nombre.setText("s");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(38, 38, 38)
+                .addGap(31, 31, 31)
                 .addComponent(panel_colores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(46, 46, 46)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btn_cambiarcolor)
-                        .addGap(47, 47, 47))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(26, Short.MAX_VALUE))))
+                        .addGap(2, 2, 2)
+                        .addComponent(btn_cambiarcolor))
+                    .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(38, 38, 38)
-                        .addComponent(panel_colores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(106, 106, 106)
+                        .addGap(119, 119, 119)
                         .addComponent(btn_cambiarcolor)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(51, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(txt_nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(panel_colores, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         pack();
@@ -105,12 +105,10 @@ public class Backgrounds extends javax.swing.JFrame {
        int red = randomGenerator.nextInt(255); 
        int green = randomGenerator.nextInt(255); 
        int blue = randomGenerator.nextInt(255); 
-     //  int yellow =randomGenerator.nextInt(256);
        Color randomColour = new Color(red,green,blue);
-      // panel_colores.setBackground(randomColour);
-      // txt_nombre.setBackground(randomColour);
-       
        panel_colores.setBackground(randomColour);
+       
+       
        
 
     }//GEN-LAST:event_btn_cambiarcolorActionPerformed
